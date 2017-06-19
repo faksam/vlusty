@@ -1,0 +1,23 @@
+{
+  "name": "vlusty",
+  "version": "1.0.0",
+  "description": "Vlusty Wardrobe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faksam/vlusty.git"
+  },
+  "keywords": [
+    "vlusty",
+    "wardrobe"
+  ],
+  "author": "Fakunle Samuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faksam/vlusty/issues"
+  },
+  "homepage": "https://github.com/faksam/vlusty#readme"
+}
