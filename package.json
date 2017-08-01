@@ -1,23 +1,17 @@
 {
   "name": "vlusty",
-  "version": "1.0.0",
-  "description": "Vlusty Wardrobe",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/faksam/vlusty.git"
-  },
-  "keywords": [
-    "vlusty",
-    "wardrobe"
-  ],
-  "author": "Fakunle Samuel",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/faksam/vlusty/issues"
-  },
-  "homepage": "https://github.com/faksam/vlusty#readme"
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
+    "ejs": "^2.5.2",
+    "serve-favicon": "~2.4.2"
+  }
 }
