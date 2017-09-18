@@ -3,6 +3,27 @@ body {
   min-width: 852px;
 }
 
+html, body, .block {
+    height: 100%;
+}
+
 a {
   color: #00B7FF;
+}
+
+a:hover {
+    background-color: #bbdefb;
+}
+
+
+.pin-top {
+    position: fixed !important;
+}
+
+.pin-bottom {
+    position: relative;
+}
+
+.pinned {
+    position: fixed !important;
 }

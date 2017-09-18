@@ -15,23 +15,23 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-  <body style="background-color: #f9f9f9;">
+  <body class="block" style="background-color: #f9f9f9;">
     <!--Navigation-->
-      <div class="container" style="padding-top:10px;">
-          <div class="row hide-on-med-and-down">
-              <a href="./" class="brand-logo  blue-text text-darken-2" style="background-position: top left; padding: 25px 10px 0 25px;"><img src="public\images\vlusty-logo01.png" width="15%"></a>
+    <div  id="blue" class="container" style="padding-top:10px;">
+        <div class="row hide-on-med-and-down">
+            <a href="./" class="brand-logo  blue-text text-darken-2" style="background-position: top left; padding: 25px 10px 0 25px;"><img src="public\images\vlusty-logo01.png" width="15%"></a>
 
-              <div style=" float: right;margin-top: 25px;">
-                  <ul class="right" style="color:#ffa000;" >
-                      <a href="/"  class="btn-flat waves-effect waves-orange" style="color:#DAA520;">Home</a>&nbsp;
-                      <a href="./services.html" class="btn-flat waves-effect waves-orange" style="color:#DAA520;">Services</a>&nbsp;
-                      <a href="./academy.html" class="btn-flat waves-effect waves-orange" style="color:#DAA520;">IT Academy</a>&nbsp;
-                      <a href="./blog.html" class="btn-flat waves-effect waves-orange" style="color:#DAA520;">Blog</a>&nbsp;
-                      <a href="./about.html" class="btn-flat waves-effect waves-orange" style="color:#DAA520;">About Us</a>&nbsp;
-                      <a href="./contact.html" class="btn-flat waves-effect waves-orange" style="color:#DAA520;">Contact Us</a>&nbsp;
-                  </ul>
-              </div>
-          </div>
+            <div style=" float: right;margin-top: 25px;">
+                <ul class="right" style="color:#ffa000;">
+                    <a href="/" class="btn-flat waves-effect waves-purple blue-text">Home</a>&nbsp;
+                    <a href="./services.html" class="btn-flat waves-effect waves-purple blue-text">Services</a>&nbsp;
+                    <a href="./academy.html" class="btn-flat waves-effect waves-purple blue-text">IT Academy</a>&nbsp;
+                    <a href="./blog.html" class="btn-flat waves-effect waves-purple blue-text">Blog</a>&nbsp;
+                    <a href="./about" class="btn-flat waves-effect waves-purple blue-text">About Us</a>&nbsp;
+                    <a href="./contact.html" class="btn-flat waves-effect waves-purple blue-text">Contact Us</a>&nbsp;
+                </ul>
+            </div>
+        </div>
           <div class="transparent" role="navigation">
               <div class="hide-on-large-only nav-wrapper container">
                   <ul id="nav-mobile" class="side-nav center">
@@ -51,12 +51,41 @@
               </div>
           </div>
       </div>
+    <!--Body Content-->
+      <div id="red">
+          <div class="container pushpin-top" data-target="red" style="top: 0px;">
+              <div class="row">
+                  <div class="" style="top: 0px;">
+                      <div class="col s6">
+                          <a class="btn-large waves-effect waves-purple blue hoverable" style="border-radius: 25px;">All</a>&nbsp;&nbsp;
+                          <a class="btn-flat blue lighten-4 hoverable waves-effect waves-purple" style="border-radius: 25px;">Shop Men</a>&nbsp;&nbsp;
+                          <a class="btn-flat purple lighten-4 hoverable waves-effect waves-purple" style="border-radius: 25px;">Shop Women</a>&nbsp;&nbsp;
+                          <!--<a class="btn-flat purple lighten-4 hoverable waves-effect waves-purple" style="border-radius: 25px;">Shop Children</a>&nbsp;&nbsp;<a class="btn-flat purple lighten-4 hoverable waves-effect waves-purple" style="border-radius: 25px;">Shop Women</a>&nbsp;&nbsp;<a class="btn-flat purple lighten-4 hoverable waves-effect waves-purple" style="border-radius: 25px;">Shop Women</a>&nbsp;&nbsp;-->
+                      </div>
+                      <div class="col s5 push-s1">
+                          <form class="col s12">
+                              <div class="">
+                                  <div class="input-field col s9">
+                                      <input id="icon_prefix" type="text" class="validate">
+                                      <label for="icon_prefix">Search</label>
+                                  </div>
+                                  <div class="input-field right col s3">
+                                      <a class="btn-floating teal hoverable waves-effect waves-green"><i class="material-icons">search</i></a>&nbsp;&nbsp;
+                                      <a class="btn-floating blue hoverable waves-effect waves-purple"><i class="material-icons">shopping_cart</i></a>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
     <div id="bodyContent">
-      <div class="container" style="padding-top:20px;">
+      <div class="container" style="padding-top:5px;">
           <div>
               <div class="row">
                   <div class="col s4">
-                      <div class="carousel carousel-slider data-indicators="true"">
+                      <div class="carousel carousel-slider data-indicators="true"" style="height:360px;">
                           <div class=" carousel-item hoverable" href="#one!" style=" height: 360px;background-size:contain; background-repeat:no-repeat;background-image:url('./public/images/VLUSTY FOR AFRICA.jpg')">
                               <div class="fixed-action-btn vertical click-to-toggle">
                                   <a class="btn-floating btn-large red">
@@ -136,7 +165,7 @@
                       <table class="bordered">
                           <thead>
                               <tr>
-                                  <th>Most Requested</th>
+                                  <th>Trending Now</th>
                               </tr>
                           </thead>
 
@@ -211,46 +240,39 @@
                   </div>
               </div>
           </div>
+          <br /><br />
           <div class="">
               <div class="row">
-                  <a class="btn-large">All</a>&nbsp;&nbsp;
-                  <a class="btn-flat">Button</a>&nbsp;&nbsp;
-                  <a class="btn-flat">Button</a>&nbsp;&nbsp;
+                  <h4 class="center blue-text" style="font-weight:bold;text-decoration-color:royalblue;">
+                    LATEST DESIGN'S
+                  </h4>
+                  <p id="design_count" class="center">9.0000000</p>
               </div>
               <div class="row">
                   <div class="col s4">
                       <div class="card hoverable">
                           <div class="card-image">
-                              <img src="./public/images/Vlusty_003.jpg">
+                              <img style="height:360px;" src="./public/images/Vlusty_003.jpg">
                               <span class="card-title">Card Title</span>
-                              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                          </div>
-                          <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                              <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add_shopping_cart</i></a>
                           </div>
                       </div>
                   </div>
                   <div class="col s4">
                       <div class="card hoverable">
                           <div class="card-image">
-                              <img src="./public/images/Vlusty_004.jpg">
+                              <img style="height:360px;" src="./public/images/Vlusty_004.jpg">
                               <span class="card-title">Card Title</span>
-                              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                          </div>
-                          <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                              <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add_shopping_cart</i></a>
                           </div>
                       </div>
                   </div>
                   <div class="col s4">
                       <div class="card hoverable">
                           <div class="card-image">
-                              <img src="./public/images/Vlusty_005.jpg">
+                              <img style="height:360px;" src="./public/images/Vlusty_005.jpg">
                               <span class="card-title">Card Title</span>
-                              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                          </div>
-                          <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                              <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add_shopping_cart</i></a>
                           </div>
                       </div>
                   </div>
@@ -259,48 +281,77 @@
                   <div class="col s4">
                       <div class="card hoverable">
                           <div class="card-image">
-                              <img src="./public/images/Vlusty_006.jpg">
+                              <img style="height:360px;" src="./public/images/Vlusty_006.jpg">
                               <span class="card-title">Card Title</span>
-                              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                          </div>
-                          <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                              <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add_shopping_cart</i></a>
                           </div>
                       </div>
                   </div>
                   <div class="col s4">
                       <div class="card hoverable">
                           <div class="card-image">
-                              <img src="./public/images/Vlusty_007.jpg">
+                              <img style="height:360px;" src="./public/images/Vlusty_007.jpg">
                               <span class="card-title">Card Title</span>
-                              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                          </div>
-                          <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                              <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add_shopping_cart</i></a>
                           </div>
                       </div>
                   </div>
                   <div class="col s4">
                       <div class="card hoverable">
                           <div class="card-image">
-                              <img src="./public/images/Vlusty_008.jpg">
+                              <img style="height:360px;" src="./public/images/Vlusty_008.jpg">
                               <span class="card-title">Card Title</span>
-                              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                          </div>
-                          <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                              <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add_shopping_cart</i></a>
                           </div>
                       </div>
                   </div>
-                  <div class="col s4">
-                      <div class="card hoverable">
-                          <div class="card-image">
-                              <img src="./public/images/Vlusty_009.jpg">
-                              <span class="card-title">Card Title</span>
-                              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              </div>
+          </div>
+          <br /><br />
+          <div>
+              <div>
+                  <div class="row">
+                      <h4 class="center blue-text" style="font-weight:bold;text-decoration-color:royalblue;">
+                          TRENDING NOW
+                      </h4>
+                  </div>
+                  <div class="row">
+                      <div class="col s8">
+                          <div class="card hoverable">
+                              <div class="card-image">
+                                  <img style="height:360px;" src="./public/images/asian_fashion001.jpg">
+                                  <span class="card-title">Card Title</span>
+                                  <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add_shopping_cart</i></a>
+                              </div>
                           </div>
-                          <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                      </div>
+                      <div class="col s4">
+                          <div class="card hoverable">
+                              <div class="card-image">
+                                  <img style="height:360px;" src="./public/images/CU2-WATCHES.jpg">
+                                  <span class="card-title">Card Title</span>
+                                  <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add_shopping_cart</i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col s4">
+                          <div class="card hoverable">
+                              <div class="card-image">
+                                  <img style="height:360px;" src="./public/images/beautiful_muslim001.jpg">
+                                  <span class="card-title">Card Title</span>
+                                  <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add_shopping_cart</i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col s8">
+                          <div class="card hoverable">
+                              <div class="card-image">
+                                  <img style="height:360px;" src="./public/images/TIMBERLAND001.jpg">
+                                  <span class="card-title">Card Title</span>
+                                  <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add_shopping_cart</i></a>
+                              </div>
                           </div>
                       </div>
                   </div>
@@ -308,8 +359,35 @@
           </div>
       </div>
     </div>
-
-
+      <br /><br /><br />
+    <!--Footer-->
+    <div class="">
+          <footer class="page-footer blue darken-2">
+              <div class="container">
+                  <div class="row">
+                      <div class="col l6 s12">
+                          <h5 class="white-text">Footer Content</h5>
+                          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                      </div>
+                      <div class="col l4 offset-l2 s12">
+                          <h5 class="white-text">Links</h5>
+                          <ul>
+                              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-copyright">
+                  <div class="container">
+                      © 2014 Copyright Text
+                      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                  </div>
+              </div>
+          </footer>
+      </div>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="public/javascripts/materialize.min.js"></script>

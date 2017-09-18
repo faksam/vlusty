@@ -14,6 +14,8 @@ var port = 3456;
 app.listen(port);
 console.log("Listening on port : " + port);
 
+
+
 // Require static assets from public folder
 app.use('/public', express.static(path.join(__dirname + '/public')));
 
@@ -23,6 +25,18 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
+app.get('/about', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/about.html'));
+});
+app.get('/about', function (req, res) {
+    res.sendFile('/about.html');
+});
+app.get('/about', function (req, res) {
+    res.render('about.html');
+});
+app.get('/hello', function (req, res) {
+    res.send("Hello World!");
+});
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
