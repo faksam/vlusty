@@ -7,6 +7,24 @@ router.get('/', function (req, res, next) {
     res.sendFile(path(__dirname + '/index.html'));
 });
 */
+router.get('/', function (req, res) {
+    res.render('index.html');
+});
+router.get('/latest', function (req, res) {
+    res.render('latest.html');
+});
+router.get('/trending', function (req, res) {
+    res.render('trending.html');
+});
+router.get('/topsearch', function (req, res) {
+    res.render('topsearch.html');
+});
+router.get('/consult', function (req, res) {
+    res.render('consult.html');
+});
+router.get('/hello', function (req, res, next) {
+    res.send("Hello World!");
+});
 router.get('/hello', function (req, res, next) {
     res.send("Hello World!");
 });
