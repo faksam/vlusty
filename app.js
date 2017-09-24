@@ -10,9 +10,9 @@ var routes = require('./routes/index');
 var app = express();
 
 //Start server
-var port = 3456;
-app.listen(port);
-console.log("Listening on port : " + port);
+//var port = 3456;
+//app.listen(port);
+//console.log("Listening on port : " + port);
 
 
 
