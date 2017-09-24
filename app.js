@@ -10,12 +10,12 @@ var routes = require('./routes/index');
 var app = express();
 
 //Start server
-//var port = 3456;
-//app.listen(port);
-//console.log("Listening on port : " + port);
+var port = 3456;
+app.listen(port);
+console.log("Listening on port : " + port);
 
 
-
+app.use('/', routes);
 // Require static assets from public folder
 app.use('/public', express.static(path.join(__dirname + '/public')));
 
@@ -26,6 +26,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 //app.set('view engine', 'ejs');
+/*
+
 
 app.get('/', function(req, res) {
     res.render('index.html');
@@ -45,6 +47,7 @@ app.get('/consult', function (req, res) {
 app.get('/hello', function (req, res, next) {
     res.send("Hello World!");
 });
+*/
 /*
 app.get('/about', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/about.html'));
