@@ -22,21 +22,41 @@ app.use('/public', express.static(path.join(__dirname + '/public')));
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 //app.set('view engine', 'jade');
+
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
+//app.set('view engine', 'ejs');
 
+app.get('/', function(req, res) {
+    res.render('index.html');
+});
+app.get('/latest', function (req, res) {
+    res.render('latest.html');
+});
+app.get('/trending', function (req, res) {
+      res.render('trending.html');
+});
+app.get('/topsearch', function (req, res) {
+    res.render('topsearch.html');
+});
+app.get('/consult', function (req, res) {
+    res.render('consult.html');
+});
+app.get('/hello', function (req, res, next) {
+    res.send("Hello World!");
+});
+/*
 app.get('/about', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/about.html'));
 });
 app.get('/about', function (req, res) {
     res.sendFile('/about.html');
 });
-app.get('/about', function (req, res) {
-    res.render('about.html');
-});
 app.get('/hello', function (req, res) {
     res.send("Hello World!");
 });
+
+*/
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -45,12 +65,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+//app.use('/', routes);
 //app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  var err = new Error('The Page You Are Looking For Was Not Found');
   err.status = 404;
   next(err);
 });

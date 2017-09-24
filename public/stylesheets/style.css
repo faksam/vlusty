@@ -11,13 +11,25 @@ a {
   color: #00B7FF;
 }
 
-a:hover {
+a.btn-flat:hover {
     background-color: #bbdefb;
 }
 
+.breadcrumb {
+    color: lightblue;
+}
 
+.breadcrumb:before {
+    color: lightblue;
+}
+
+    .breadcrumb:last-child {
+        color: rgb(33, 150, 243);
+    }
+
+ 
 .pin-top {
-    position: fixed !important;
+    position: relative;
 }
 
 .pin-bottom {
